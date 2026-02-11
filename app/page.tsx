@@ -5,11 +5,11 @@ import { useState, useRef } from 'react';
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const sections = {
-    hero: useRef(null),
-    sauce: useRef(null),
-    menus: useRef(null),
-    location: useRef(null),
-    cta: useRef(null),
+    hero: useRef<HTMLDivElement>(null),
+    sauce: useRef<HTMLDivElement>(null),
+    menus: useRef<HTMLDivElement>(null),
+    location: useRef<HTMLDivElement>(null),
+    cta: useRef<HTMLDivElement>(null),
   };
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
