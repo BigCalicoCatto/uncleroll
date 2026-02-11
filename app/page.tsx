@@ -348,17 +348,21 @@ export default function Home() {
       </div>
 
       {/* PRICE SECTION 1 */}
-      <div ref={sections.price} style={{ backgroundColor: "#22c55e", width: "100%", padding: "1rem 1rem", textAlign: "center", color: "white" }}>
-        <p style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0.3rem 0" }}>MIX and MATCH</p>
-        <p style={{ fontSize: "2rem", fontWeight: "bold", margin: "0.3rem 0" }}>3 ROLL RM10</p>
-        <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.3rem 0" }}>FREE 1 SOS</p>
+      <div ref={sections.price} style={{ backgroundColor: "#22c55e", width: "100%", padding: "1.5rem 1rem", textAlign: "center" }}>
+        <div style={{ backgroundColor: "#22c55e", border: "2px solid white", borderRadius: "12px", padding: "1rem", color: "white" }}>
+          <p style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0.3rem 0" }}>MIX and MATCH</p>
+          <p style={{ fontSize: "2rem", fontWeight: "bold", margin: "0.3rem 0" }}>3 ROLL RM10</p>
+          <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.3rem 0" }}>FREE 1 SOS</p>
+        </div>
       </div>
 
       {/* PRICE SECTION 2 */}
-      <div style={{ backgroundColor: "#f97316", width: "100%", padding: "1rem 1rem", textAlign: "center", color: "#ffff00" }}>
-        <p style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0.3rem 0" }}>MIX and MATCH</p>
-        <p style={{ fontSize: "2rem", fontWeight: "bold", margin: "0.3rem 0" }}>10 ROLL RM30</p>
-        <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.3rem 0" }}>FREE 3 SOS</p>
+      <div style={{ backgroundColor: "#f97316", width: "100%", padding: "1.5rem 1rem", textAlign: "center" }}>
+        <div style={{ backgroundColor: "#f97316", border: "2px solid #ffff00", borderRadius: "12px", padding: "1rem", color: "#ffff00" }}>
+          <p style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0.3rem 0" }}>MIX and MATCH</p>
+          <p style={{ fontSize: "2rem", fontWeight: "bold", margin: "0.3rem 0" }}>10 ROLL RM30</p>
+          <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.3rem 0" }}>FREE 3 SOS</p>
+        </div>
       </div>
 
       {/* REVIEWS SECTION */}
