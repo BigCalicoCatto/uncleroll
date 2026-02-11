@@ -7,6 +7,7 @@ export default function Home() {
   const sections = {
     sauce: useRef<HTMLDivElement>(null),
     menus: useRef<HTMLDivElement>(null),
+    price: useRef<HTMLDivElement>(null),
     location: useRef<HTMLDivElement>(null),
     cta: useRef<HTMLDivElement>(null),
   };
@@ -103,7 +104,7 @@ export default function Home() {
                 fontWeight: "bold",
               }}
             >
-              Sauces
+              Sos
             </button>
             <button
               onClick={() => scrollToSection(sections.menus)}
@@ -117,7 +118,21 @@ export default function Home() {
                 fontWeight: "bold",
               }}
             >
-              Menus
+              Menu
+            </button>
+            <button
+              onClick={() => scrollToSection(sections.price)}
+              style={{
+                background: "none",
+                border: "none",
+                fontSize: "1rem",
+                color: "#22c55e",
+                cursor: "pointer",
+                textAlign: "left",
+                fontWeight: "bold",
+              }}
+            >
+              Harga
             </button>
             <button
               onClick={() => scrollToSection(sections.location)}
@@ -131,7 +146,7 @@ export default function Home() {
                 fontWeight: "bold",
               }}
             >
-              Location
+              Lokasi
             </button>
             <button
               onClick={() => scrollToSection(sections.cta)}
@@ -145,7 +160,7 @@ export default function Home() {
                 fontWeight: "bold",
               }}
             >
-              Contact
+              Hubungi
             </button>
           </div>
         )}
@@ -330,9 +345,43 @@ export default function Home() {
         </div>
       </div>
 
+      {/* PRICE SECTION 1 */}
+      <div ref={sections.price} style={{ backgroundColor: "#22c55e", width: "100%", padding: "1rem 1rem", textAlign: "center", color: "white" }}>
+        <p style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0.3rem 0" }}>MIX and MATCH</p>
+        <p style={{ fontSize: "2rem", fontWeight: "bold", margin: "0.3rem 0" }}>3 ROLL RM10</p>
+        <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.3rem 0" }}>FREE 1 SOS</p>
+      </div>
+
+      {/* PRICE SECTION 2 */}
+      <div style={{ backgroundColor: "#f97316", width: "100%", padding: "1rem 1rem", textAlign: "center", color: "#ffff00" }}>
+        <p style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0.3rem 0" }}>MIX and MATCH</p>
+        <p style={{ fontSize: "2rem", fontWeight: "bold", margin: "0.3rem 0" }}>10 ROLL RM30</p>
+        <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.3rem 0" }}>FREE 3 SOS</p>
+      </div>
+
+      {/* REVIEWS SECTION */}
+      <div style={{ backgroundColor: "#ffffff", width: "100%", padding: "2rem 1rem" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+          <div style={{ backgroundColor: "#ffffff", border: "2px solid #22c55e", borderRadius: "8px", padding: "1rem" }}>
+            <p style={{ fontSize: "0.85rem", lineHeight: "1.3", margin: "0 0 0.5rem 0", color: "#000" }}>SEDAPPPPP SANGAT, selalu beli lepas ambik anak sekolah, anak-anak suka sangat</p>
+            <p style={{ fontSize: "0.8rem", fontWeight: "bold", margin: 0, color: "#22c55e" }}>- Anisha</p>
+          </div>
+
+          <div style={{ backgroundColor: "#ffffff", border: "2px solid #22c55e", borderRadius: "8px", padding: "1rem" }}>
+            <p style={{ fontSize: "0.85rem", lineHeight: "1.3", margin: "0 0 0.5rem 0", color: "#000" }}>Terbaik! Sos dia memang syahdu, layan betul makan, kenyang sampai terduduk</p>
+            <p style={{ fontSize: "0.8rem", fontWeight: "bold", margin: 0, color: "#22c55e" }}>- Sham</p>
+          </div>
+
+          <div style={{ backgroundColor: "#ffffff", border: "2px solid #22c55e", borderRadius: "8px", padding: "1rem" }}>
+            <p style={{ fontSize: "0.85rem", lineHeight: "1.3", margin: "0 0 0.5rem 0", color: "#000" }}>Makanan kalau rasa tak lalu nak makan, tapi nak makan. Ringan je makan tapi kenyang.. Bahan2 semua fresh</p>
+            <p style={{ fontSize: "0.8rem", fontWeight: "bold", margin: 0, color: "#22c55e" }}>- Jijan</p>
+          </div>
+        </div>
+      </div>
+
       {/* LOCATION SECTION */}
       <div ref={sections.location} style={{ backgroundColor: "#22c55e", width: "100%", padding: "2rem 1rem", textAlign: "center", color: "white" }}>
-        <h2 style={{ fontSize: "1.8rem", fontWeight: "bold", margin: "0 0 1.5rem 0" }}>JOM BELI SEKARANG</h2>
+        <h2 style={{ fontSize: "1.8rem", fontWeight: "bold", margin: "0 0 1.5rem 0" }}>DAPATKAN SEKARANG DI GERAI UNCLE ROLL</h2>
         <div style={{ position: "relative", width: "100%", paddingBottom: "100%", backgroundColor: "#000", borderRadius: "8px", overflow: "hidden", marginBottom: "1.5rem" }}>
           <img src="/map.webp" alt="Map" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }} />
         </div>
