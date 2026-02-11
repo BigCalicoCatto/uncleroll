@@ -12,7 +12,7 @@ export default function Home() {
     cta: useRef<HTMLDivElement>(null),
   };
 
-  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
+  const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
     setMenuOpen(false);
   };
