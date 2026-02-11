@@ -203,7 +203,7 @@ export default function Home() {
           position: 'relative',
           width: '100%',
           paddingBottom: '175%', // 9:16 ratio
-          backgroundColor: '#000',
+          backgroundColor: '#ffffff',
           overflow: 'hidden',
         }}
       >
@@ -353,7 +353,7 @@ export default function Home() {
         ref={sections.sauce}
         style={{
           width: '100%',
-          backgroundColor: '#f5f5f5',
+          backgroundColor: '#ffffff',
           padding: '2rem 1rem',
         }}
       >
@@ -372,9 +372,10 @@ export default function Home() {
               position: 'relative',
               width: '100%',
               paddingBottom: '100%',
-              backgroundColor: '#000',
+              backgroundColor: '#ffffff',
               borderRadius: '8px',
               overflow: 'hidden',
+              border: '3px solid #22c55e',
             }}
           >
             <img
@@ -406,7 +407,7 @@ export default function Home() {
               <p
                 style={{
                   color: 'white',
-                  fontSize: '1.1rem',
+                  fontSize: '1.65rem',
                   fontWeight: 'bold',
                   margin: 0,
                 }}
@@ -422,9 +423,10 @@ export default function Home() {
               position: 'relative',
               width: '100%',
               paddingBottom: '100%',
-              backgroundColor: '#000',
+              backgroundColor: '#ffffff',
               borderRadius: '8px',
               overflow: 'hidden',
+              border: '3px solid #22c55e',
             }}
           >
             <img
@@ -456,7 +458,7 @@ export default function Home() {
               <p
                 style={{
                   color: 'white',
-                  fontSize: '1.1rem',
+                  fontSize: '1.65rem',
                   fontWeight: 'bold',
                   margin: 0,
                 }}
@@ -473,17 +475,13 @@ export default function Home() {
         ref={sections.menus}
         style={{
           width: '100%',
-          backgroundImage: 'url(/unclerollhero.webp)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundColor: '#000',
+          backgroundColor: '#ffffff',
+          padding: '2rem 1rem',
         }}
       >
-        {/* Background Overlay */}
+        {/* Menu Items Container */}
         <div
           style={{
-            backgroundColor: 'rgba(0,0,0,0.7)',
-            padding: '2rem 1rem',
             minHeight: '100%',
           }}
         >
@@ -505,9 +503,10 @@ export default function Home() {
                 position: 'relative',
                 width: '100%',
                 paddingBottom: '100%',
-                backgroundColor: '#000',
+                backgroundColor: '#ffffff',
                 borderRadius: '8px',
                 overflow: 'hidden',
+                border: '3px solid #22c55e',
               }}
             >
               <img
@@ -523,10 +522,10 @@ export default function Home() {
                 }}
               />
             </div>
-            <div style={{ color: 'white' }}>
+            <div style={{ backgroundColor: 'rgba(255,255,255,0.5)', padding: '1rem', borderRadius: '8px' }}>
               <h3
                 style={{
-                  fontSize: '1rem',
+                  fontSize: '1.15rem',
                   fontWeight: 'bold',
                   margin: '0 0 0.5rem 0',
                   color: '#22c55e',
@@ -534,7 +533,7 @@ export default function Home() {
               >
                 Teriyaki Chicken Roll
               </h3>
-              <p style={{ fontSize: '0.85rem', lineHeight: '1.4', margin: 0 }}>
+              <p style={{ fontSize: '0.9rem', lineHeight: '1.4', margin: 0, color: '#000' }}>
                 Hirisan dada ayam yang dimasak bersama sos Teriyaki Homemade
                 menggunakan resipi rahsia Uncle Roll. Ayam diperap selama 12 jam
                 sebelum digoreng bersama menjamin rasa Teriyaki dan lazat!
@@ -555,10 +554,10 @@ export default function Home() {
               alignItems: 'start',
             }}
           >
-            <div style={{ color: 'white' }}>
+            <div style={{ backgroundColor: 'rgba(255,255,255,0.5)', padding: '1rem', borderRadius: '8px' }}>
               <h3
                 style={{
-                  fontSize: '1rem',
+                  fontSize: '1.15rem',
                   fontWeight: 'bold',
                   margin: '0 0 0.5rem 0',
                   color: '#22c55e',
@@ -566,7 +565,7 @@ export default function Home() {
               >
                 Ketam Raja Laut Roll
               </h3>
-              <p style={{ fontSize: '0.85rem', lineHeight: '1.4', margin: 0 }}>
+              <p style={{ fontSize: '0.9rem', lineHeight: '1.4', margin: 0, color: '#000' }}>
                 Isi ketam yang dipanaskan sebelum dibalut, memastikan kesegaran
                 bahan. Roll disediakan segar setiap sebelum setiap pesanan!
               </p>
@@ -577,9 +576,10 @@ export default function Home() {
                 position: 'relative',
                 width: '100%',
                 paddingBottom: '100%',
-                backgroundColor: '#000',
+                backgroundColor: '#ffffff',
                 borderRadius: '8px',
                 overflow: 'hidden',
+                border: '3px solid #22c55e',
               }}
             >
               <img
@@ -615,9 +615,10 @@ export default function Home() {
                 position: 'relative',
                 width: '100%',
                 paddingBottom: '100%',
-                backgroundColor: '#000',
+                backgroundColor: '#ffffff',
                 borderRadius: '8px',
                 overflow: 'hidden',
+                border: '3px solid #22c55e',
               }}
             >
               <img
@@ -633,10 +634,10 @@ export default function Home() {
                 }}
               />
             </div>
-            <div style={{ color: 'white' }}>
+            <div style={{ backgroundColor: 'rgba(255,255,255,0.5)', padding: '1rem', borderRadius: '8px' }}>
               <h3
                 style={{
-                  fontSize: '1rem',
+                  fontSize: '1.15rem',
                   fontWeight: 'bold',
                   margin: '0 0 0.5rem 0',
                   color: '#22c55e',
@@ -644,7 +645,7 @@ export default function Home() {
               >
                 Udang Ratu Laut Roll
               </h3>
-              <p style={{ fontSize: '0.85rem', lineHeight: '1.4', margin: 0 }}>
+              <p style={{ fontSize: '0.9rem', lineHeight: '1.4', margin: 0, color: '#000' }}>
                 Udang segar yang dikopek dan direbus, kemanisan dan kesegaran
                 udang terjamin!
               </p>
@@ -661,10 +662,10 @@ export default function Home() {
               alignItems: 'start',
             }}
           >
-            <div style={{ color: 'white' }}>
+            <div style={{ backgroundColor: 'rgba(255,255,255,0.5)', padding: '1rem', borderRadius: '8px' }}>
               <h3
                 style={{
-                  fontSize: '1rem',
+                  fontSize: '1.15rem',
                   fontWeight: 'bold',
                   margin: '0 0 0.5rem 0',
                   color: '#22c55e',
@@ -672,7 +673,7 @@ export default function Home() {
               >
                 Itik Salai Mengilai Roll
               </h3>
-              <p style={{ fontSize: '0.85rem', lineHeight: '1.4', margin: 0 }}>
+              <p style={{ fontSize: '0.9rem', lineHeight: '1.4', margin: 0, color: '#000' }}>
                 Disediakan dengan menggunakan daging itik salai yang premium,
                 rasa salai yang kuat hingga teringat-ingat!
               </p>
@@ -683,9 +684,10 @@ export default function Home() {
                 position: 'relative',
                 width: '100%',
                 paddingBottom: '100%',
-                backgroundColor: '#000',
+                backgroundColor: '#ffffff',
                 borderRadius: '8px',
                 overflow: 'hidden',
+                border: '3px solid #22c55e',
               }}
             >
               <img
