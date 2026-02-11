@@ -7,6 +7,7 @@ export default function Home() {
   const [animatedSections, setAnimatedSections] = useState<{ [key: string]: boolean }>({});
   
   const sections = {
+    hero: useRef<HTMLDivElement>(null),
     sauce: useRef<HTMLDivElement>(null),
     menus: useRef<HTMLDivElement>(null),
     price: useRef<HTMLDivElement>(null),
@@ -210,6 +211,8 @@ export default function Home() {
 
       {/* HERO SECTION */}
       <div
+        id="hero"
+        className={animatedSections['hero'] ? 'fade-in-up' : ''}
         style={{
           position: "relative",
           width: "100%",
@@ -314,14 +317,14 @@ export default function Home() {
       </div>
 
       {/* POWER MOTTO 1 */}
-      <div style={{ backgroundColor: "#22c55e", width: "100%", padding: "2rem 1rem", textAlign: "center", color: "white" }}>
+      <div id="motto1" className={animatedSections['motto1'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#22c55e", width: "100%", padding: "2rem 1rem", textAlign: "center", color: "white" }}>
         <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.5rem 0" }}>PADAT DENGAN INTI</p>
         <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.5rem 0" }}>BAHAN YANG SEGAR</p>
         <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.5rem 0" }}>KEPUASAN TERJAMIN</p>
       </div>
 
       {/* POWER MOTTO 2 */}
-      <div style={{ backgroundColor: "#f97316", width: "100%", padding: "1.5rem 1rem", textAlign: "center", color: "#ffff00", fontSize: "1.2rem", fontWeight: "bold" }}>
+      <div id="motto2" className={animatedSections['motto2'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#f97316", width: "100%", padding: "1.5rem 1rem", textAlign: "center", color: "#ffff00", fontSize: "1.2rem", fontWeight: "bold" }}>
         GANDINGAN KHAS SOS HOMEMADE TERMAHSYUR!!
       </div>
 
