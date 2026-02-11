@@ -1,15 +1,18 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [animatedSections, setAnimatedSections] = useState<{ [key: string]: boolean }>({});
+  
   const sections = {
     sauce: useRef<HTMLDivElement>(null),
     menus: useRef<HTMLDivElement>(null),
     price: useRef<HTMLDivElement>(null),
     location: useRef<HTMLDivElement>(null),
     cta: useRef<HTMLDivElement>(null),
+    reviews: useRef<HTMLDivElement>(null),
   };
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
@@ -17,9 +20,48 @@ export default function Home() {
     setMenuOpen(false);
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setAnimatedSections((prev) => ({
+              ...prev,
+              [entry.target.id]: true,
+            }));
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    Object.values(sections).forEach((ref) => {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div style={{ fontFamily: "system-ui, -apple-system, sans-serif" }}>
       <style>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .fade-in-up {
+          animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
         @media (min-width: 768px) {
           .sauce-grid {
             display: grid !important;
@@ -284,7 +326,7 @@ export default function Home() {
       </div>
 
       {/* SAUCE SECTION */}
-      <div ref={sections.sauce} style={{ width: "100%", backgroundColor: "#ffffff", padding: "2rem 1rem" }}>
+      <div ref={sections.sauce} id="sauce" className={animatedSections['sauce'] ? 'fade-in-up' : ''} style={{ width: "100%", backgroundColor: "#ffffff", padding: "2rem 1rem" }}>
         <div className="sauce-grid" style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
           <div style={{ position: "relative", width: "100%", paddingBottom: "100%", backgroundColor: "#ffffff", borderRadius: "8px", overflow: "hidden", border: "3px solid #22c55e" }}>
             <img src="/unclesweet.webp" alt="Sweet Sauce" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }} />
@@ -303,7 +345,7 @@ export default function Home() {
       </div>
 
       {/* MENUS SECTION */}
-      <div ref={sections.menus} style={{ width: "100%", backgroundColor: "#000", backgroundImage: "url(/unclerollhero.webp)", backgroundSize: "cover", backgroundPosition: "center", padding: "0" }}>
+      <div ref={sections.menus} id="menus" className={animatedSections['menus'] ? 'fade-in-up' : ''} style={{ width: "100%", backgroundColor: "#000", backgroundImage: "url(/unclerollhero.webp)", backgroundSize: "cover", backgroundPosition: "center", padding: "0" }}>
         <div style={{ backgroundColor: "rgba(0,0,0,0.6)", padding: "2rem 1rem" }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", marginBottom: "2rem", paddingBottom: "2rem", borderBottom: "1px solid rgba(0,0,0,0.1)", alignItems: "center" }}>
           <div style={{ position: "relative", width: "100%", paddingBottom: "100%", backgroundColor: "#ffffff", borderRadius: "8px", overflow: "hidden", border: "3px solid #22c55e" }}>
@@ -348,7 +390,7 @@ export default function Home() {
       </div>
 
       {/* PRICE SECTION 1 */}
-      <div ref={sections.price} style={{ backgroundColor: "#22c55e", width: "100%", padding: "1.5rem 1rem", textAlign: "center" }}>
+      <div ref={sections.price} id="price" className={animatedSections['price'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#22c55e", width: "100%", padding: "1.5rem 1rem", textAlign: "center" }}>
         <div style={{ backgroundColor: "#22c55e", border: "2px solid white", borderRadius: "12px", padding: "1rem", color: "white" }}>
           <p style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0.3rem 0" }}>MIX and MATCH</p>
           <p style={{ fontSize: "2rem", fontWeight: "bold", margin: "0.3rem 0" }}>3 ROLL RM10</p>
@@ -366,7 +408,7 @@ export default function Home() {
       </div>
 
       {/* REVIEWS SECTION */}
-      <div style={{ backgroundColor: "#ffffff", width: "100%", padding: "2rem 1rem" }}>
+      <div ref={sections.reviews} id="reviews" className={animatedSections['reviews'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#ffffff", width: "100%", padding: "2rem 1rem" }}>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div style={{ backgroundColor: "#ffffff", border: "2px solid #22c55e", borderRadius: "8px", padding: "1rem" }}>
             <p style={{ fontSize: "0.85rem", lineHeight: "1.3", margin: "0 0 0.5rem 0", color: "#000" }}>SEDAPPPPP SANGAT, selalu beli lepas ambik anak sekolah, anak-anak suka sangat</p>
@@ -386,7 +428,7 @@ export default function Home() {
       </div>
 
       {/* LOCATION SECTION */}
-      <div ref={sections.location} style={{ backgroundColor: "#22c55e", width: "100%", padding: "2rem 1rem", textAlign: "center", color: "white" }}>
+      <div ref={sections.location} id="location" className={animatedSections['location'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#22c55e", width: "100%", padding: "2rem 1rem", textAlign: "center", color: "white" }}>
         <h2 style={{ fontSize: "1.8rem", fontWeight: "bold", margin: "0 0 0.5rem 0" }}>DAPATKAN SEKARANG DI GERAI UNCLE ROLL</h2>
         <p style={{ fontSize: "0.9rem", margin: "0 0 1.5rem 0" }}>Waktu Operasi: ISNIN - SABTU, 5pm - 9pm</p>
         <div style={{ position: "relative", width: "100%", paddingBottom: "100%", backgroundColor: "#000", borderRadius: "8px", overflow: "hidden", marginBottom: "1.5rem" }}>
@@ -403,7 +445,7 @@ export default function Home() {
       </div>
 
       {/* CTA SECTION */}
-      <div ref={sections.cta} style={{ backgroundColor: "#ffffff", width: "100%", padding: "2rem 1rem", textAlign: "center", color: "#000" }}>
+      <div ref={sections.cta} id="cta" className={animatedSections['cta'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#ffffff", width: "100%", padding: "2rem 1rem", textAlign: "center", color: "#000" }}>
         <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0 0 2rem 0" }}>HUBUNGI UNCLE ROLL untuk tempahan awal!</h2>
         
         <div style={{ display: "flex", gap: "2rem", alignItems: "center", justifyContent: "center", marginBottom: "2rem" }}>
