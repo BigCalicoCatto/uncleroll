@@ -396,21 +396,38 @@ export default function Home() {
       </div>
 
       {/* CTA SECTION */}
-      <div ref={sections.cta} style={{ backgroundColor: "#000", width: "100%", padding: "2rem 1rem", textAlign: "center", color: "white" }}>
+      <div ref={sections.cta} style={{ backgroundColor: "#ffffff", width: "100%", padding: "2rem 1rem", textAlign: "center", color: "#000" }}>
         <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0 0 2rem 0" }}>HUBUNGI UNCLE ROLL untuk tempahan awal!</h2>
-        <div style={{ display: "flex", flexDirection: "column", gap: "1rem", alignItems: "center" }}>
-          <a href="#" style={{ backgroundColor: "#22c55e", color: "white", padding: "1rem 2rem", borderRadius: "8px", textDecoration: "none", fontWeight: "bold", fontSize: "1rem", display: "inline-flex", alignItems: "center", gap: "0.5rem" }}>
-            <i className="fab fa-whatsapp"></i>WhatsApp
-          </a>
-          <div style={{ display: "flex", gap: "1rem", justifyContent: "center" }}>
-            <a href="#" style={{ backgroundColor: "#f97316", color: "white", width: "50px", height: "50px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5rem", textDecoration: "none" }}>
-              <i className="fab fa-instagram"></i>
+        
+        <div style={{ display: "flex", gap: "2rem", alignItems: "center", justifyContent: "center", marginBottom: "2rem" }}>
+          <div style={{ width: "100px", height: "100px" }}>
+            <img
+              src="/unclerolllogo.webp"
+              alt="Uncle Roll Logo"
+              style={{ width: "100%", height: "100%", objectFit: "contain" }}
+            />
+          </div>
+          
+          <div style={{ display: "flex", flexDirection: "column", gap: "1rem", alignItems: "center" }}>
+            <a href="#" style={{ backgroundColor: "#22c55e", color: "white", padding: "1rem 2rem", borderRadius: "8px", textDecoration: "none", fontWeight: "bold", fontSize: "1rem", display: "inline-flex", alignItems: "center", gap: "0.5rem" }}>
+              <i className="fab fa-whatsapp"></i>WhatsApp
             </a>
-            <a href="#" style={{ backgroundColor: "#f97316", color: "white", width: "50px", height: "50px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5rem", textDecoration: "none" }}>
-              <i className="fab fa-tiktok"></i>
-            </a>
+            <div style={{ display: "flex", gap: "1rem" }}>
+              <a href="#" style={{ backgroundColor: "#f97316", color: "white", width: "50px", height: "50px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5rem", textDecoration: "none" }}>
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="#" style={{ backgroundColor: "#f97316", color: "white", width: "50px", height: "50px", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "1.5rem", textDecoration: "none" }}>
+                <i className="fab fa-tiktok"></i>
+              </a>
+            </div>
           </div>
         </div>
+      </div>
+
+      {/* FOOTER */}
+      <div style={{ backgroundColor: "#000", width: "100%", padding: "2rem 1rem", textAlign: "center", color: "#888", fontSize: "0.85rem" }}>
+        <p style={{ margin: "0.5rem 0" }}>Copyright Uncle Roll 2026</p>
+        <p style={{ margin: "0.5rem 0" }}>Engineered by FatCalico&Co for FatCalico&Co</p>
       </div>
 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
