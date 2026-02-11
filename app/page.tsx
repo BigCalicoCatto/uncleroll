@@ -303,7 +303,8 @@ export default function Home() {
       </div>
 
       {/* MENUS SECTION */}
-      <div ref={sections.menus} style={{ width: "100%", backgroundColor: "#ffffff", backgroundImage: "url(/unclerollhero.webp)", backgroundSize: "cover", backgroundPosition: "center", padding: "2rem 1rem" }}>
+      <div ref={sections.menus} style={{ width: "100%", backgroundColor: "#000", backgroundImage: "url(/unclerollhero.webp)", backgroundSize: "cover", backgroundPosition: "center", padding: "0" }}>
+        <div style={{ backgroundColor: "rgba(0,0,0,0.6)", padding: "2rem 1rem" }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", marginBottom: "2rem", paddingBottom: "2rem", borderBottom: "1px solid rgba(0,0,0,0.1)", alignItems: "center" }}>
           <div style={{ position: "relative", width: "100%", paddingBottom: "100%", backgroundColor: "#ffffff", borderRadius: "8px", overflow: "hidden", border: "3px solid #22c55e" }}>
             <img src="/chicken.webp" alt="Chicken" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }} />
@@ -342,6 +343,7 @@ export default function Home() {
           <div style={{ position: "relative", width: "100%", paddingBottom: "100%", backgroundColor: "#ffffff", borderRadius: "8px", overflow: "hidden", border: "3px solid #22c55e" }}>
             <img src="/smoked.webp" alt="Smoked Duck" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }} />
           </div>
+        </div>
         </div>
       </div>
 
@@ -400,7 +402,7 @@ export default function Home() {
         <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0 0 2rem 0" }}>HUBUNGI UNCLE ROLL untuk tempahan awal!</h2>
         
         <div style={{ display: "flex", gap: "2rem", alignItems: "center", justifyContent: "center", marginBottom: "2rem" }}>
-          <div style={{ width: "100px", height: "100px" }}>
+          <div style={{ width: "200px", height: "200px" }}>
             <img
               src="/unclerolllogo.webp"
               alt="Uncle Roll Logo"
