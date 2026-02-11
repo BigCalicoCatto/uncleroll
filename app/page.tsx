@@ -387,7 +387,8 @@ export default function Home() {
 
       {/* LOCATION SECTION */}
       <div ref={sections.location} style={{ backgroundColor: "#22c55e", width: "100%", padding: "2rem 1rem", textAlign: "center", color: "white" }}>
-        <h2 style={{ fontSize: "1.8rem", fontWeight: "bold", margin: "0 0 1.5rem 0" }}>DAPATKAN SEKARANG DI GERAI UNCLE ROLL</h2>
+        <h2 style={{ fontSize: "1.8rem", fontWeight: "bold", margin: "0 0 0.5rem 0" }}>DAPATKAN SEKARANG DI GERAI UNCLE ROLL</h2>
+        <p style={{ fontSize: "0.9rem", margin: "0 0 1.5rem 0" }}>Waktu Operasi: ISNIN - SABTU, 5pm - 9pm</p>
         <div style={{ position: "relative", width: "100%", paddingBottom: "100%", backgroundColor: "#000", borderRadius: "8px", overflow: "hidden", marginBottom: "1.5rem" }}>
           <img src="/map.webp" alt="Map" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }} />
         </div>
