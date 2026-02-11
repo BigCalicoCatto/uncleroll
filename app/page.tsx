@@ -50,12 +50,12 @@ export default function Home() {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          padding: '0.5rem 1rem',
+          padding: '0.3rem 0.8rem',
           boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
         }}
       >
         {/* Logo */}
-        <div style={{ width: '80px', height: '80px' }}>
+        <div style={{ width: '70px', height: '70px' }}>
           <img
             src="/unclerolllogo.webp"
             alt="Uncle Roll Logo"
@@ -236,10 +236,10 @@ export default function Home() {
             UNCLE ROLL'S VIETNAM ROLL
           </h1>
 
-          {/* Tagline with Semi-transparent Background */}
+          {/* Tagline with Green Background */}
           <div
             style={{
-              backgroundColor: 'rgba(0,0,0,0.5)',
+              backgroundColor: 'rgba(34, 197, 94, 0.5)',
               padding: '1.5rem 2rem',
               borderRadius: '8px',
               width: '100%',
@@ -465,6 +465,10 @@ export default function Home() {
         style={{
           width: '100%',
           backgroundColor: '#ffffff',
+          backgroundImage: 'url(/unclerollhero.webp)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
           padding: '2rem 1rem',
           minHeight: 'auto',
         }}
