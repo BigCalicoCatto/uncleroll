@@ -12,7 +12,7 @@ export default function Home() {
     cta: useRef(null),
   };
 
-  const scrollToSection = (ref) => {
+  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
     setMenuOpen(false);
   };
@@ -555,7 +555,7 @@ export default function Home() {
               alignItems: 'start',
             }}
           >
-            <div style={{ color: 'white', order: 2 }}>
+            <div style={{ color: 'white' }}>
               <h3
                 style={{
                   fontSize: '1rem',
@@ -580,7 +580,6 @@ export default function Home() {
                 backgroundColor: '#000',
                 borderRadius: '8px',
                 overflow: 'hidden',
-                order: 1,
               }}
             >
               <img
@@ -662,7 +661,7 @@ export default function Home() {
               alignItems: 'start',
             }}
           >
-            <div style={{ color: 'white', order: 2 }}>
+            <div style={{ color: 'white' }}>
               <h3
                 style={{
                   fontSize: '1rem',
@@ -687,7 +686,6 @@ export default function Home() {
                 backgroundColor: '#000',
                 borderRadius: '8px',
                 overflow: 'hidden',
-                order: 1,
               }}
             >
               <img
