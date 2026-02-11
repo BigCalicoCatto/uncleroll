@@ -18,7 +18,7 @@ export default function Home() {
   };
 
   return (
-    <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+    <div style={{ fontFamily: "system-ui, -apple-system, sans-serif" }}>
       <style>{`
         @media (min-width: 768px) {
           .sauce-grid {
@@ -464,17 +464,17 @@ export default function Home() {
         ref={sections.menus}
         style={{
           width: '100%',
-          backgroundColor: '#ffffff',
           backgroundImage: 'url(/unclerollhero.webp)',
-          backgroundSize: '50% auto',
+          backgroundSize: 'cover',
           backgroundPosition: 'center',
-          padding: '2rem 1rem',
-          minHeight: 'auto',
+          backgroundColor: '#000',
         }}
       >
-        {/* Menu Items Container */}
+        {/* Background Overlay */}
         <div
           style={{
+            backgroundColor: 'rgba(0,0,0,0.7)',
+            padding: '2rem 1rem',
             minHeight: '100%',
           }}
         >
@@ -488,7 +488,7 @@ export default function Home() {
               marginBottom: '2rem',
               paddingBottom: '2rem',
               borderBottom: '1px solid rgba(255,255,255,0.1)',
-              alignItems: 'start',
+              alignItems: 'center',
             }}
           >
             <div
@@ -542,7 +542,7 @@ export default function Home() {
               marginBottom: '2rem',
               paddingBottom: '2rem',
               borderBottom: '1px solid rgba(255,255,255,0.1)',
-              alignItems: 'start',
+              alignItems: 'center',
             }}
           >
             <div style={{ backgroundColor: 'rgba(255,255,255,0.5)', padding: '1rem', borderRadius: '8px' }}>
@@ -598,7 +598,7 @@ export default function Home() {
               marginBottom: '2rem',
               paddingBottom: '2rem',
               borderBottom: '1px solid rgba(255,255,255,0.1)',
-              alignItems: 'start',
+              alignItems: 'center',
             }}
           >
             <div
@@ -650,7 +650,7 @@ export default function Home() {
               display: 'grid',
               gridTemplateColumns: '1fr 1fr',
               gap: '1rem',
-              alignItems: 'start',
+              alignItems: 'center',
             }}
           >
             <div style={{ backgroundColor: 'rgba(255,255,255,0.5)', padding: '1rem', borderRadius: '8px' }}>
