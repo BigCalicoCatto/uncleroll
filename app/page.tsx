@@ -50,12 +50,12 @@ export default function Home() {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          padding: '1rem',
+          padding: '0.5rem 1rem',
           boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
         }}
       >
         {/* Logo */}
-        <div style={{ width: '60px', height: '60px' }}>
+        <div style={{ width: '80px', height: '80px' }}>
           <img
             src="/unclerolllogo.webp"
             alt="Uncle Roll Logo"
@@ -122,20 +122,6 @@ export default function Home() {
               boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
             }}
           >
-            <button
-              onClick={() => scrollToSection(sections.hero)}
-              style={{
-                background: 'none',
-                border: 'none',
-                fontSize: '1rem',
-                color: '#22c55e',
-                cursor: 'pointer',
-                textAlign: 'left',
-                fontWeight: 'bold',
-              }}
-            >
-              Hero
-            </button>
             <button
               onClick={() => scrollToSection(sections.sauce)}
               style={{
@@ -226,7 +212,7 @@ export default function Home() {
           style={{
             position: 'absolute',
             inset: 0,
-            backgroundColor: 'rgba(0,0,0,0.3)',
+            backgroundColor: 'transparent',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -254,13 +240,14 @@ export default function Home() {
           <div
             style={{
               backgroundColor: 'rgba(0,0,0,0.5)',
-              padding: '1rem 1.5rem',
+              padding: '1.5rem 2rem',
               borderRadius: '8px',
+              width: '100%',
             }}
           >
             <p
               style={{
-                fontSize: '1.2rem',
+                fontSize: '1.5rem',
                 color: 'white',
                 textAlign: 'center',
                 margin: 0,
@@ -275,7 +262,7 @@ export default function Home() {
           <div
             style={{
               position: 'absolute',
-              bottom: '2rem',
+              bottom: '4rem',
               animation: 'bounce 2s infinite',
             }}
           >
@@ -410,6 +397,7 @@ export default function Home() {
                   fontSize: '1.65rem',
                   fontWeight: 'bold',
                   margin: 0,
+                  textAlign: 'center',
                 }}
               >
                 Homemade Sweet & Spicy Chili Sauce
@@ -461,6 +449,7 @@ export default function Home() {
                   fontSize: '1.65rem',
                   fontWeight: 'bold',
                   margin: 0,
+                  textAlign: 'center',
                 }}
               >
                 Creamy Mint Secret Sauce
@@ -477,6 +466,7 @@ export default function Home() {
           width: '100%',
           backgroundColor: '#ffffff',
           padding: '2rem 1rem',
+          minHeight: 'auto',
         }}
       >
         {/* Menu Items Container */}
