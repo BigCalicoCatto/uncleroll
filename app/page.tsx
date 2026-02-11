@@ -22,6 +22,12 @@ export default function Home() {
   };
 
   useEffect(() => {
+    // Animate hero on page load
+    setAnimatedSections((prev) => ({
+      ...prev,
+      hero: true,
+    }));
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
