@@ -39,7 +39,7 @@ export default function Home() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "0.3rem 0.8rem",
+          padding: "0.1rem 0.3rem",
           boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
         }}
       >
@@ -47,16 +47,16 @@ export default function Home() {
           <img
             src="/unclerolllogo.webp"
             alt="Uncle Roll Logo"
-            style={{ width: "100%", height: "100%", objectFit: "contain" }}
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
           />
         </div>
 
         <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
           <div style={{ display: "flex", gap: "0.75rem" }}>
-            <a href="#" style={{ fontSize: "1.5rem", color: "#22c55e", textDecoration: "none" }}>
+            <a href="#" style={{ fontSize: "1.5rem", color: "#4ade80", textDecoration: "none" }}>
               <i className="fab fa-tiktok"></i>
             </a>
-            <a href="#" style={{ fontSize: "1.5rem", color: "#22c55e", textDecoration: "none" }}>
+            <a href="#" style={{ fontSize: "1.5rem", color: "#4ade80", textDecoration: "none" }}>
               <i className="fab fa-instagram"></i>
             </a>
           </div>
@@ -67,7 +67,7 @@ export default function Home() {
               background: "none",
               border: "none",
               fontSize: "1.5rem",
-              color: "#22c55e",
+              color: "#4ade80",
               cursor: "pointer",
               padding: "0.5rem",
             }}
@@ -98,7 +98,7 @@ export default function Home() {
                 background: "none",
                 border: "none",
                 fontSize: "1rem",
-                color: "#22c55e",
+                color: "#4ade80",
                 cursor: "pointer",
                 textAlign: "left",
                 fontWeight: "bold",
@@ -112,7 +112,7 @@ export default function Home() {
                 background: "none",
                 border: "none",
                 fontSize: "1rem",
-                color: "#22c55e",
+                color: "#4ade80",
                 cursor: "pointer",
                 textAlign: "left",
                 fontWeight: "bold",
@@ -126,7 +126,7 @@ export default function Home() {
                 background: "none",
                 border: "none",
                 fontSize: "1rem",
-                color: "#22c55e",
+                color: "#4ade80",
                 cursor: "pointer",
                 textAlign: "left",
                 fontWeight: "bold",
@@ -140,7 +140,7 @@ export default function Home() {
                 background: "none",
                 border: "none",
                 fontSize: "1rem",
-                color: "#22c55e",
+                color: "#4ade80",
                 cursor: "pointer",
                 textAlign: "left",
                 fontWeight: "bold",
@@ -154,7 +154,7 @@ export default function Home() {
                 background: "none",
                 border: "none",
                 fontSize: "1rem",
-                color: "#22c55e",
+                color: "#4ade80",
                 cursor: "pointer",
                 textAlign: "left",
                 fontWeight: "bold",
@@ -256,7 +256,7 @@ export default function Home() {
                 background: "none",
                 border: "none",
                 fontSize: "2rem",
-                color: "#22c55e",
+                color: "#4ade80",
                 cursor: "pointer",
                 display: "flex",
                 justifyContent: "center",
@@ -303,20 +303,21 @@ export default function Home() {
       </div>
 
       {/* MENUS SECTION */}
-      <div ref={sections.menus} style={{ width: "100%", backgroundColor: "#ffffff", backgroundImage: "url(/unclerollhero.webp)", backgroundSize: "cover", backgroundPosition: "center", padding: "2rem 1rem" }}>
+      <div ref={sections.menus} style={{ width: "100%", backgroundColor: "#000", backgroundImage: "url(/unclerollhero.webp)", backgroundSize: "cover", backgroundPosition: "center", padding: "0" }}>
+        <div style={{ backgroundColor: "rgba(0,0,0,0.6)", padding: "2rem 1rem" }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", marginBottom: "2rem", paddingBottom: "2rem", borderBottom: "1px solid rgba(0,0,0,0.1)", alignItems: "center" }}>
           <div style={{ position: "relative", width: "100%", paddingBottom: "100%", backgroundColor: "#ffffff", borderRadius: "8px", overflow: "hidden", border: "3px solid #22c55e" }}>
             <img src="/chicken.webp" alt="Chicken" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }} />
           </div>
           <div style={{ backgroundColor: "rgba(255,255,255,0.5)", padding: "1rem", borderRadius: "8px" }}>
-            <h3 style={{ fontSize: "1.15rem", fontWeight: "bold", margin: "0 0 0.5rem 0", color: "#22c55e" }}>Teriyaki Chicken Roll</h3>
+            <h3 style={{ fontSize: "1.15rem", fontWeight: "bold", margin: "0 0 0.5rem 0", color: "#4ade80" }}>Teriyaki Chicken Roll</h3>
             <p style={{ fontSize: "0.9rem", lineHeight: "1.4", margin: 0, color: "#000" }}>Hirisan dada ayam yang dimasak bersama sos Teriyaki Homemade menggunakan resipi rahsia Uncle Roll!</p>
           </div>
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", marginBottom: "2rem", paddingBottom: "2rem", borderBottom: "1px solid rgba(0,0,0,0.1)", alignItems: "center" }}>
           <div style={{ backgroundColor: "rgba(255,255,255,0.5)", padding: "1rem", borderRadius: "8px" }}>
-            <h3 style={{ fontSize: "1.15rem", fontWeight: "bold", margin: "0 0 0.5rem 0", color: "#22c55e" }}>Ketam Raja Laut Roll</h3>
+            <h3 style={{ fontSize: "1.15rem", fontWeight: "bold", margin: "0 0 0.5rem 0", color: "#4ade80" }}>Ketam Raja Laut Roll</h3>
             <p style={{ fontSize: "0.9rem", lineHeight: "1.4", margin: 0, color: "#000" }}>Isi ketam yang dipanaskan sebelum dibalut, memastikan kesegaran bahan. Roll disediakan segar setiap sebelum setiap pesanan!</p>
           </div>
           <div style={{ position: "relative", width: "100%", paddingBottom: "100%", backgroundColor: "#ffffff", borderRadius: "8px", overflow: "hidden", border: "3px solid #22c55e" }}>
@@ -329,19 +330,20 @@ export default function Home() {
             <img src="/shrimp.webp" alt="Shrimp" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }} />
           </div>
           <div style={{ backgroundColor: "rgba(255,255,255,0.5)", padding: "1rem", borderRadius: "8px" }}>
-            <h3 style={{ fontSize: "1.15rem", fontWeight: "bold", margin: "0 0 0.5rem 0", color: "#22c55e" }}>Udang Ratu Laut Roll</h3>
+            <h3 style={{ fontSize: "1.15rem", fontWeight: "bold", margin: "0 0 0.5rem 0", color: "#4ade80" }}>Udang Ratu Laut Roll</h3>
             <p style={{ fontSize: "0.9rem", lineHeight: "1.4", margin: 0, color: "#000" }}>Udang segar yang dikopek dan direbus, kemanisan dan kesegaran udang terjamin!</p>
           </div>
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", alignItems: "center" }}>
           <div style={{ backgroundColor: "rgba(255,255,255,0.5)", padding: "1rem", borderRadius: "8px" }}>
-            <h3 style={{ fontSize: "1.15rem", fontWeight: "bold", margin: "0 0 0.5rem 0", color: "#22c55e" }}>Itik Salai Mengilai Roll</h3>
+            <h3 style={{ fontSize: "1.15rem", fontWeight: "bold", margin: "0 0 0.5rem 0", color: "#4ade80" }}>Itik Salai Mengilai Roll</h3>
             <p style={{ fontSize: "0.9rem", lineHeight: "1.4", margin: 0, color: "#000" }}>Disediakan dengan menggunakan daging itik salai yang premium, rasa salai yang kuat hingga teringat-ingat!</p>
           </div>
           <div style={{ position: "relative", width: "100%", paddingBottom: "100%", backgroundColor: "#ffffff", borderRadius: "8px", overflow: "hidden", border: "3px solid #22c55e" }}>
             <img src="/smoked.webp" alt="Smoked Duck" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }} />
           </div>
+        </div>
         </div>
       </div>
 
@@ -364,17 +366,17 @@ export default function Home() {
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div style={{ backgroundColor: "#ffffff", border: "2px solid #22c55e", borderRadius: "8px", padding: "1rem" }}>
             <p style={{ fontSize: "0.85rem", lineHeight: "1.3", margin: "0 0 0.5rem 0", color: "#000" }}>SEDAPPPPP SANGAT, selalu beli lepas ambik anak sekolah, anak-anak suka sangat</p>
-            <p style={{ fontSize: "0.8rem", fontWeight: "bold", margin: 0, color: "#22c55e" }}>- Anisha</p>
+            <p style={{ fontSize: "0.8rem", fontWeight: "bold", margin: 0, color: "#4ade80" }}>- Anisha</p>
           </div>
 
           <div style={{ backgroundColor: "#ffffff", border: "2px solid #22c55e", borderRadius: "8px", padding: "1rem" }}>
             <p style={{ fontSize: "0.85rem", lineHeight: "1.3", margin: "0 0 0.5rem 0", color: "#000" }}>Terbaik! Sos dia memang syahdu, layan betul makan, kenyang sampai terduduk</p>
-            <p style={{ fontSize: "0.8rem", fontWeight: "bold", margin: 0, color: "#22c55e" }}>- Sham</p>
+            <p style={{ fontSize: "0.8rem", fontWeight: "bold", margin: 0, color: "#4ade80" }}>- Sham</p>
           </div>
 
           <div style={{ backgroundColor: "#ffffff", border: "2px solid #22c55e", borderRadius: "8px", padding: "1rem" }}>
             <p style={{ fontSize: "0.85rem", lineHeight: "1.3", margin: "0 0 0.5rem 0", color: "#000" }}>Makanan kalau rasa tak lalu nak makan, tapi nak makan. Ringan je makan tapi kenyang.. Bahan2 semua fresh</p>
-            <p style={{ fontSize: "0.8rem", fontWeight: "bold", margin: 0, color: "#22c55e" }}>- Jijan</p>
+            <p style={{ fontSize: "0.8rem", fontWeight: "bold", margin: 0, color: "#4ade80" }}>- Jijan</p>
           </div>
         </div>
       </div>
@@ -386,10 +388,10 @@ export default function Home() {
           <img src="/map.webp" alt="Map" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }} />
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-          <a href="#" style={{ backgroundColor: "white", color: "#22c55e", padding: "1rem 2rem", borderRadius: "8px", textDecoration: "none", fontWeight: "bold", fontSize: "1rem", display: "inline-block", textAlign: "center" }}>
+          <a href="#" style={{ backgroundColor: "white", color: "#4ade80", padding: "1rem 2rem", borderRadius: "8px", textDecoration: "none", fontWeight: "bold", fontSize: "1rem", display: "inline-block", textAlign: "center" }}>
             <i className="fab fa-waze" style={{ marginRight: "0.5rem" }}></i>Waze
           </a>
-          <a href="#" style={{ backgroundColor: "white", color: "#22c55e", padding: "1rem 2rem", borderRadius: "8px", textDecoration: "none", fontWeight: "bold", fontSize: "1rem", display: "inline-block", textAlign: "center" }}>
+          <a href="#" style={{ backgroundColor: "white", color: "#4ade80", padding: "1rem 2rem", borderRadius: "8px", textDecoration: "none", fontWeight: "bold", fontSize: "1rem", display: "inline-block", textAlign: "center" }}>
             <i className="fas fa-map-marker-alt" style={{ marginRight: "0.5rem" }}></i>Google Maps
           </a>
         </div>
@@ -404,7 +406,7 @@ export default function Home() {
             <img
               src="/unclerolllogo.webp"
               alt="Uncle Roll Logo"
-              style={{ width: "100%", height: "100%", objectFit: "contain" }}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </div>
           
