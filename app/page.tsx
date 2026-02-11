@@ -468,7 +468,6 @@ export default function Home() {
           backgroundImage: 'url(/unclerollhero.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundAttachment: 'fixed',
           padding: '2rem 1rem',
           minHeight: 'auto',
         }}
@@ -528,9 +527,7 @@ export default function Home() {
                 Teriyaki Chicken Roll
               </h3>
               <p style={{ fontSize: '0.9rem', lineHeight: '1.4', margin: 0, color: '#000' }}>
-                Hirisan dada ayam yang dimasak bersama sos Teriyaki Homemade
-                menggunakan resipi rahsia Uncle Roll. Ayam diperap selama 12 jam
-                sebelum digoreng bersama menjamin rasa Teriyaki dan lazat!
+                Hirisan dada ayam yang dimasak bersama sos Teriyaki Homemade menggunakan resipi rahsia Uncle Roll!
               </p>
             </div>
           </div>
