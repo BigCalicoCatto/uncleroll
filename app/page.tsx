@@ -466,7 +466,7 @@ export default function Home() {
           width: '100%',
           backgroundColor: '#ffffff',
           backgroundImage: 'url(/unclerollhero.webp)',
-          backgroundSize: 'cover',
+          backgroundSize: '50% auto',
           backgroundPosition: 'center',
           padding: '2rem 1rem',
           minHeight: 'auto',
