@@ -43,7 +43,7 @@ export default function Home() {
           boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
         }}
       >
-        <div style={{ width: "98px", height: "98px" }}>
+        <div style={{ width: "70px", height: "70px" }}>
           <img
             src="/unclerolllogo.webp"
             alt="Uncle Roll Logo"
@@ -402,7 +402,7 @@ export default function Home() {
         <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0 0 2rem 0" }}>HUBUNGI UNCLE ROLL untuk tempahan awal!</h2>
         
         <div style={{ display: "flex", gap: "2rem", alignItems: "center", justifyContent: "center", marginBottom: "2rem" }}>
-          <div style={{ width: "280px", height: "280px" }}>
+          <div style={{ width: "200px", height: "200px" }}>
             <img
               src="/unclerolllogo.webp"
               alt="Uncle Roll Logo"
