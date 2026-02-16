@@ -12,6 +12,7 @@ export default function Home() {
     menus: useRef<HTMLDivElement>(null),
     price: useRef<HTMLDivElement>(null),
     location: useRef<HTMLDivElement>(null),
+    delivery: useRef<HTMLDivElement>(null),
     cta: useRef<HTMLDivElement>(null),
     reviews: useRef<HTMLDivElement>(null),
   };
@@ -103,10 +104,13 @@ export default function Home() {
         <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
           <div style={{ display: "flex", gap: "0.75rem" }}>
             <a href="#" style={{ fontSize: "1.5rem", color: "#4ade80", textDecoration: "none" }}>
-              <i className="fab fa-tiktok"></i>
+              <i className="fab fa-whatsapp"></i>
             </a>
             <a href="#" style={{ fontSize: "1.5rem", color: "#4ade80", textDecoration: "none" }}>
               <i className="fab fa-instagram"></i>
+            </a>
+            <a href="#" style={{ fontSize: "1.5rem", color: "#4ade80", textDecoration: "none" }}>
+              <i className="fab fa-tiktok"></i>
             </a>
           </div>
 
@@ -196,6 +200,20 @@ export default function Home() {
               }}
             >
               Lokasi
+            </button>
+            <button
+              onClick={() => scrollToSection(sections.reviews)}
+              style={{
+                background: "none",
+                border: "none",
+                fontSize: "1rem",
+                color: "#4ade80",
+                cursor: "pointer",
+                textAlign: "left",
+                fontWeight: "bold",
+              }}
+            >
+              Testimoni
             </button>
             <button
               onClick={() => scrollToSection(sections.cta)}
@@ -324,14 +342,18 @@ export default function Home() {
 
       {/* POWER MOTTO 1 */}
       <div id="motto1" className={animatedSections['motto1'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#22c55e", width: "100%", padding: "2rem 1rem", textAlign: "center", color: "white" }}>
-        <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.5rem 0" }}>PADAT DENGAN INTI</p>
-        <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.5rem 0" }}>BAHAN YANG SEGAR</p>
-        <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.5rem 0" }}>KEPUASAN TERJAMIN</p>
+        <div style={{ backgroundColor: "white", border: "2px solid #22c55e", borderRadius: "12px", padding: "1rem", color: "#22c55e" }}>
+          <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.5rem 0" }}>PADAT DENGAN INTI</p>
+          <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.5rem 0" }}>BAHAN YANG SEGAR</p>
+          <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.5rem 0" }}>KEPUASAN TERJAMIN</p>
+        </div>
       </div>
 
       {/* POWER MOTTO 2 */}
-      <div id="motto2" className={animatedSections['motto2'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#f97316", width: "100%", padding: "1.5rem 1rem", textAlign: "center", color: "#ffff00", fontSize: "1.2rem", fontWeight: "bold" }}>
-        GANDINGAN KHAS SOS HOMEMADE TERMAHSYUR!!
+      <div id="motto2" className={animatedSections['motto2'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#f97316", width: "100%", padding: "1.5rem 1rem", textAlign: "center" }}>
+        <div style={{ backgroundColor: "#f97316", border: "2px solid #ffff00", borderRadius: "12px", padding: "1rem", color: "#ffff00" }}>
+          <p style={{ fontSize: "1.2rem", fontWeight: "bold", margin: "0.3rem 0" }}>GANDINGAN KHAS SOS HOMEMADE TERMAHSYUR!!</p>
+        </div>
       </div>
 
       {/* SAUCE SECTION */}
@@ -418,6 +440,7 @@ export default function Home() {
 
       {/* REVIEWS SECTION */}
       <div ref={sections.reviews} id="reviews" className={animatedSections['reviews'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#ffffff", width: "100%", padding: "2rem 1rem" }}>
+        <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0 0 1.5rem 0", textAlign: "center", color: "#000" }}>Apa kata pelanggan setia kami</h2>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div style={{ backgroundColor: "#ffffff", border: "2px solid #22c55e", borderRadius: "8px", padding: "1rem" }}>
             <p style={{ fontSize: "0.85rem", lineHeight: "1.3", margin: "0 0 0.5rem 0", color: "#000" }}>SEDAPPPPP SANGAT, selalu beli lepas ambik anak sekolah, anak-anak suka sangat</p>
@@ -453,9 +476,28 @@ export default function Home() {
         </div>
       </div>
 
+      {/* DELIVERY SECTION */}
+      <div ref={sections.delivery} id="delivery" className={animatedSections['delivery'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#ffffff", width: "100%", padding: "2rem 1rem", textAlign: "center" }}>
+        <h2 style={{ fontSize: "1.8rem", fontWeight: "bold", margin: "0 0 1.5rem 0", color: "#000" }}>Anda order, Kami hantar!</h2>
+        <div style={{ position: "relative", width: "100%", paddingBottom: "75%", backgroundColor: "#f0f0f0", borderRadius: "8px", overflow: "hidden", marginBottom: "1.5rem" }}>
+          <img src="/delivery.webp" alt="Delivery" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }} />
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
+          <a href="#" style={{ backgroundColor: "#f97316", color: "white", padding: "1rem 2rem", borderRadius: "8px", textDecoration: "none", fontWeight: "bold", fontSize: "1rem", display: "inline-block", textAlign: "center" }}>
+            <i className="fas fa-utensils" style={{ marginRight: "0.5rem" }}></i>Foodpanda
+          </a>
+          <a href="#" style={{ backgroundColor: "#f97316", color: "white", padding: "1rem 2rem", borderRadius: "8px", textDecoration: "none", fontWeight: "bold", fontSize: "1rem", display: "inline-block", textAlign: "center" }}>
+            <i className="fas fa-motorcycle" style={{ marginRight: "0.5rem" }}></i>GrabFood
+          </a>
+          <a href="#" style={{ backgroundColor: "#f97316", color: "white", padding: "1rem 2rem", borderRadius: "8px", textDecoration: "none", fontWeight: "bold", fontSize: "1rem", display: "inline-block", textAlign: "center" }}>
+            <i className="fas fa-shopping-bag" style={{ marginRight: "0.5rem" }}></i>ShoppeeFood
+          </a>
+        </div>
+      </div>
+
       {/* CTA SECTION */}
       <div ref={sections.cta} id="cta" className={animatedSections['cta'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#ffffff", width: "100%", padding: "2rem 1rem", textAlign: "center", color: "#000" }}>
-        <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0 0 2rem 0" }}>HUBUNGI UNCLE ROLL untuk tempahan awal!</h2>
+        <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0 0 2rem 0" }}>HUBUNGI UNCLE ROLL untuk tempahan majlis!</h2>
         
         <div style={{ display: "flex", gap: "2rem", alignItems: "center", justifyContent: "center", marginBottom: "2rem" }}>
           <div style={{ width: "200px", height: "200px" }}>
