@@ -342,7 +342,7 @@ export default function Home() {
 
       {/* POWER MOTTO 1 */}
       <div id="motto1" className={animatedSections['motto1'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#22c55e", width: "100%", padding: "2rem 1rem", textAlign: "center", color: "white" }}>
-        <div style={{ backgroundColor: "white", border: "2px solid #22c55e", borderRadius: "12px", padding: "1rem", color: "#22c55e" }}>
+        <div style={{ backgroundColor: "transparent", border: "2px solid white", borderRadius: "12px", padding: "1rem", color: "white" }}>
           <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.5rem 0" }}>PADAT DENGAN INTI</p>
           <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.5rem 0" }}>BAHAN YANG SEGAR</p>
           <p style={{ fontSize: "1.3rem", fontWeight: "bold", margin: "0.5rem 0" }}>KEPUASAN TERJAMIN</p>
@@ -439,8 +439,8 @@ export default function Home() {
       </div>
 
       {/* REVIEWS SECTION */}
-      <div ref={sections.reviews} id="reviews" className={animatedSections['reviews'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#ffffff", width: "100%", padding: "2rem 1rem" }}>
-        <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0 0 1.5rem 0", textAlign: "center", color: "#000" }}>Apa kata pelanggan setia kami</h2>
+      <div ref={sections.reviews} id="reviews" className={animatedSections['reviews'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#22c55e", width: "100%", padding: "2rem 1rem" }}>
+        <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", margin: "0 0 1.5rem 0", textAlign: "center", color: "white" }}>Apa kata pelanggan setia kami</h2>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           <div style={{ backgroundColor: "#ffffff", border: "2px solid #22c55e", borderRadius: "8px", padding: "1rem" }}>
             <p style={{ fontSize: "0.85rem", lineHeight: "1.3", margin: "0 0 0.5rem 0", color: "#000" }}>SEDAPPPPP SANGAT, selalu beli lepas ambik anak sekolah, anak-anak suka sangat</p>
@@ -477,19 +477,19 @@ export default function Home() {
       </div>
 
       {/* DELIVERY SECTION */}
-      <div ref={sections.delivery} id="delivery" className={animatedSections['delivery'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#ffffff", width: "100%", padding: "2rem 1rem", textAlign: "center" }}>
-        <h2 style={{ fontSize: "1.8rem", fontWeight: "bold", margin: "0 0 1.5rem 0", color: "#000" }}>Anda order, Kami hantar!</h2>
+      <div ref={sections.delivery} id="delivery" className={animatedSections['delivery'] ? 'fade-in-up' : ''} style={{ backgroundColor: "#22c55e", width: "100%", padding: "2rem 1rem", textAlign: "center", color: "white" }}>
+        <h2 style={{ fontSize: "1.8rem", fontWeight: "bold", margin: "0 0 1.5rem 0", color: "white" }}>Anda order, Kami hantar!</h2>
         <div style={{ position: "relative", width: "100%", paddingBottom: "75%", backgroundColor: "#f0f0f0", borderRadius: "8px", overflow: "hidden", marginBottom: "1.5rem" }}>
           <img src="/delivery.webp" alt="Delivery" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }} />
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-          <a href="#" style={{ backgroundColor: "#f97316", color: "white", padding: "1rem 2rem", borderRadius: "8px", textDecoration: "none", fontWeight: "bold", fontSize: "1rem", display: "inline-block", textAlign: "center" }}>
+          <a href="#" style={{ backgroundColor: "white", color: "#22c55e", padding: "1rem 2rem", borderRadius: "8px", textDecoration: "none", fontWeight: "bold", fontSize: "1rem", display: "inline-block", textAlign: "center" }}>
             <i className="fas fa-utensils" style={{ marginRight: "0.5rem" }}></i>Foodpanda
           </a>
-          <a href="#" style={{ backgroundColor: "#f97316", color: "white", padding: "1rem 2rem", borderRadius: "8px", textDecoration: "none", fontWeight: "bold", fontSize: "1rem", display: "inline-block", textAlign: "center" }}>
+          <a href="#" style={{ backgroundColor: "white", color: "#22c55e", padding: "1rem 2rem", borderRadius: "8px", textDecoration: "none", fontWeight: "bold", fontSize: "1rem", display: "inline-block", textAlign: "center" }}>
             <i className="fas fa-motorcycle" style={{ marginRight: "0.5rem" }}></i>GrabFood
           </a>
-          <a href="#" style={{ backgroundColor: "#f97316", color: "white", padding: "1rem 2rem", borderRadius: "8px", textDecoration: "none", fontWeight: "bold", fontSize: "1rem", display: "inline-block", textAlign: "center" }}>
+          <a href="#" style={{ backgroundColor: "white", color: "#22c55e", padding: "1rem 2rem", borderRadius: "8px", textDecoration: "none", fontWeight: "bold", fontSize: "1rem", display: "inline-block", textAlign: "center" }}>
             <i className="fas fa-shopping-bag" style={{ marginRight: "0.5rem" }}></i>ShoppeeFood
           </a>
         </div>
